@@ -1,0 +1,61 @@
+.img-border-radius {
+    border-radius: 25px;
+}
+
+.img-container{
+    padding: 20px;
+    border-radius: 45px;
+    margin: 30px;
+}
+
+.contact-container{
+    padding: 25px;
+    border-radius: 35px;
+    background-color: #f0f0f0;
+    margin: 30px;
+}
+
+.certificate-container{
+    border-radius: 35px;
+    background-color: #f0f0f0;
+}
+
+.padding-0{
+    padding: 0;
+}
+
+
+.card-custom {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+}
+
+.card-custom:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth content reveal effect */
+.card-custom:hover .card-body {
+  transform: translateY(-10px);
+  transition: transform 0.5s ease;
+}
+
+.contact-img{
+    z-index: 0;
+}
+
+.paragraph {
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  max-height: 0; /* Collapsed state */
+  opacity: 0; /* Initially hidden */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.paragraph.show {
+  max-height: 300px; /* Expanded state (set to a value that can contain your text) */
+  opacity: 1; /* Fully visible */
+}
