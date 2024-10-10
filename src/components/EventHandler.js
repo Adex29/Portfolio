@@ -6,4 +6,10 @@ function closeModal() {
     document.getElementById('my_modal_5').close();
 }
 
-export { showModal, closeModal };
+
+function FormSubmit(){
+    alert("Message Sent!");
+}
+
+
+export { showModal, closeModal, FormSubmit };

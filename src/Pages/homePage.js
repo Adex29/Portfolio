@@ -5,13 +5,11 @@ import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 class HomePage extends Component {
     constructor(props) {
         super(props);
-        // Initializing the state
         this.state = {
-            showMore: false // A simple state to show/hide content
+            showMore: false
         };
     }
 
-    // Method to toggle the 'showMore' state
     toggleShowMore = () => {
         this.setState((prevState) => ({
             showMore: !prevState.showMore
@@ -45,7 +43,7 @@ class HomePage extends Component {
                     </div>
                 </div>
                 <div className="flex start justify-start w-1/2 py-0 md:pl-14">
-                    <a href="/projects">
+                    <a href="/contactme">
                         <button className="btn btn-wide btn-success text-lg">Hire Me</button>
                     </a>
                 </div>
@@ -59,7 +57,6 @@ class HomePage extends Component {
                                 {this.state.showMore ? 'Show Less' : 'Show More'}
                             </button>
     
-                            {/* Conditional rendering based on state */}
                             <p className={`paragraph pt-5 ${this.state.showMore ? 'show' : ''}`}>
                                 I work on a variety of projects that showcase my skills. These include the DejaBrew POS System, which manages transactions for staff, a Movie Booking System for browsing and booking tickets, and a Hotel Booking Website for online room reservations. I also built an Inventory Management System in Java, a fun Tic Tac Toe Game, and an ESP 8266 WLED LED Strips controller for smart lighting. My early projects include an About Me Website, and I've explored Router Unlocking and Android Customization to enhance device performance and customization.
                             </p>
