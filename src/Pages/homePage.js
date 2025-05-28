@@ -44,7 +44,7 @@ class HomePage extends Component {
                 </div>
                 <div className="flex start justify-start w-1/2 py-0 md:pl-14">
                     <a href="/contactme">
-                        <button className="btn btn-wide btn-success text-lg">Hire Me</button>
+                        <button className="btn btn-wide btn-success text-lg">Contact Me?</button>
                     </a>
                 </div>
                 <div className="flex start justify-start pt-14 pb-5 md:pl-14">
