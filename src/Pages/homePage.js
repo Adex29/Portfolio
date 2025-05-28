@@ -64,7 +64,7 @@ class HomePage extends Component {
     
                         <div className="mt-5 md:mt-0 md:w-1/2 md:flex md:justify-center">
                             <a href="/projects">
-                                <button className="btn btn-lg items-center justify-center space-x-2">
+                                <button className="btn btn-lg items-center justify-center space-x-2 hover:translate-x-2">
                                     <FontAwesomeIcon icon={faArrowRightLong} size="3x" />
                                 </button>
                             </a>
