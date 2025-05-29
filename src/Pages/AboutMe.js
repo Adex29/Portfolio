@@ -34,7 +34,7 @@ function AboutMe(){
                     </div>
                 </div>
 
-                <div className='md:flex img-container padding-0 mt-8'>
+                <div className='md:flex mt-4 lg:gap-x-1 gap-x-4'>
                     <div className='md:basis-1/2 certificate-container md:mr-0 lg:md:mr-2 mb-6 md:mb-0'> 
                         <center>
                             <h3 className="text-xl sm:text-2xl pt-4 sm:pt-5 font-semibold">
@@ -59,7 +59,7 @@ function AboutMe(){
                            </p>
                         </div>
                     </div>
-                    <div className='md:basis-1/2 content-center certificate-container mt-5 md:mt-0 md:ml-0 lg:md:ml-2'>
+                    <div className='md:basis-1/2 content-center certificate-container mt-4 md:mt-0 md:ml-0 lg:md:ml-2'>
                         <center>
                             <h3 className='text-xl sm:text-2xl pt-4 sm:pt-5 font-semibold'>
                                 WORK EXPERIENCE

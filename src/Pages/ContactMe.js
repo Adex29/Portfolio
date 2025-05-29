@@ -18,14 +18,14 @@ function ContactMe() {
                 </center>
                 <div className='lg:flex'>
                     <div className='basis-1/2 relative '>
-                        <img className="absolute ml-36 mt-2 z-10 opacity-25" src="/conatctMeBackground.png" width="350" alt='contact-background-image'></img>
+                        {/* <img className="absolute ml-36 mt-2 z-10 opacity-25" src="/conatctMeBackground.png" width="350" alt='contact-background-image'></img> */}
                         <center className='d-flex flex-col justify-content-center relative z-20'>
                             <h3 className="text-2xl py-5 mt-20"><strong>Need Help?</strong></h3>
                             <p className='p-10 text-xl font-semibold'>Get in touch with me via filling the form or sending me a messege using my contact Details.</p>
                             <button className="btn border-gray-300 md:mt-20" onClick={() => showModal()}>View Contact Details</button>
                         </center>
                     </div>
-                    <div className='basis-1/2 z-40 relative contact-container lg:shrink'>
+                    {/* <div className='basis-1/2 z-40 relative contact-container lg:shrink'>
                         <center>
                             <h3 className="text-2xl py-5"><strong>MESSAGE ME</strong></h3>
                             <form className='form-control w-3/4'>
@@ -45,7 +45,7 @@ function ContactMe() {
                                 <button onClick={() => FormSubmit()} type="button" className="btn btn-success m-2">Send</button>
                             </form>
                         </center>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -55,7 +55,7 @@ function ContactMe() {
                         <h3 className="font-bold text-2xl pb-5 "><strong>CONTACT DETAILS</strong></h3>
                         <hr className="w-full border-black " />
                         <h6 className="text-2xl pt-5"><a className='link link-hover' href="mailto:jayarbaniqued29@gmail.com">jayarbaniqued29@gmail.com</a></h6>
-                        <h6 className="text-2xl">0951-072-8003</h6>
+                        {/* <h6 className="text-2xl">0951-072-8003</h6> */}
                         <h6 className="text-2xl pt-5"><strong>LinkedIn</strong></h6>
                         <h6 className="text-2xl"><a className='link link-hover' href="https://www.linkedin.com/in/jay-ar-b-6a7343128/">Jay-ar Baniqued</a></h6>
                         

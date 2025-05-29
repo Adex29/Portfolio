@@ -7,8 +7,13 @@ class Projects extends Component{
 
     projects = [
         {
+            name: "FluiGuard",
+            description: "A mobile application developed using Flutter with a Firebase backend, designed to monitor dissolved oxygen levels in water by analyzing fish behavior through live video feeds from a Raspberry Pi with a camera. It uses machine learning to process the video feeds and data from sensors, which is then displayed in the app. The app features real-time monitoring, historical data analysis, and alerts for abnormal conditions.",
+            img: "/projectIMG/FluiGuard.png"
+        },
+        {
             name: "DejaBrew POS System",
-            description: "A POS system that allows DejaBrew staffs with different roles to browse, select, add, update and delete items, add orders and export summary of transactions.",
+            description: "A POS system that allows DejaBrew staffs with different roles to browse, select, add, update and delete items, add orders and export summary of transactions. It was developed using PHP, JavaScript, HTML, and CSS, with a MySQL database for data storage. The system is designed to streamline the ordering process and improve efficiency in managing transactions.",
             img: "/projectIMG/DejaBrew.png"
         },
         {
