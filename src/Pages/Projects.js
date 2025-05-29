@@ -7,9 +7,19 @@ class Projects extends Component{
 
     projects = [
         {
+            name: "SMART-ICM - SMART-DX",
+            description: "A web application developed using Laravel with various javascript libraries with mysql database, an OJT project developed by me and my partner within a span of 3 months. The application is designed specifically for the use of PhilRice for creating work plan and input cost of activities of rice farming, report generation, and dashboard with data analysis and AI integration for interpreting data. The application features a user-friendly interface than can be used in different devices such as desktop, tablet, and mobile phones.",
+            img: "/projectIMG/SmartICMDummy.png"
+        },
+        {
             name: "FluiGuard",
-            description: "A mobile application developed using Flutter with a Firebase backend, designed to monitor dissolved oxygen levels in water by analyzing fish behavior through live video feeds from a Raspberry Pi with a camera. It uses machine learning to process the video feeds and data from sensors, which is then displayed in the app. The app features real-time monitoring, historical data analysis, and alerts for abnormal conditions.",
+            description: "A mobile application developed using Flutter with a Firebase backend, designed to monitor dissolved oxygen levels in water by analyzing fish behavior through live video feeds from a Raspberry Pi with a camera. It uses machine learning to process the video feeds and data from sensors, which is then displayed in the app. The app features real-time monitoring, historical data analysis, and alerts for abnormal conditions. It was a capstone project developed by me and my team mates, I was responsible for the frontend(slightly, only the data visualization page), backend development, training and integration of the objectect detection model, object tracking, object counting and analysis. Link to our Capstone Project paper:",
             img: "/projectIMG/FluiGuard.png"
+        },
+                {
+            name: "PointDex Blogs",
+            description: "A Laravel and ReactJS based blogging web-application that allows users to create, read, update, and delete blogs. It features a user-friendly interface, responsive design, and a rich text editor for creating blog posts. The platform also includes user authentication, comment sections, likes, and a search functionality. It also integrates Authentication API from different social media platforms such as Google, and Facebook.",
+            img: "/projectIMG/PointDexBlogs.png"
         },
         {
             name: "DejaBrew POS System",
@@ -57,7 +67,7 @@ class Projects extends Component{
         return(
             <div>
                 <Header />
-                <div className="p-10">
+                <div className="md:p-10 p-3">
                     <center>
                         <h1 className="text-6xl py-10 font-semibold">Projects</h1>
                         <hr className="w-4/5 my-7 border-t-2 border-b-2 border-black" />

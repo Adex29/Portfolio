@@ -25,6 +25,7 @@ function ContactMe() {
                             <button className="btn border-gray-300 md:mt-20" onClick={() => showModal()}>View Contact Details</button>
                         </center>
                     </div>
+                    <div className='basis-1/2 z-40 relative contact-container lg:shrink'>--Under Development--</div>
                     {/* <div className='basis-1/2 z-40 relative contact-container lg:shrink'>
                         <center>
                             <h3 className="text-2xl py-5"><strong>MESSAGE ME</strong></h3>

@@ -10,7 +10,7 @@ function ProjectBuilder(props){
                     </figure>
                     <div className="card-body">
                         <h2 className="card-title">{project.name}</h2>
-                        <p>{project.description}</p>
+                        <p className="text-justify">{project.description}</p>
                         <div className="card-actions justify-end">
                             {/* <button className="btn btn-primary">Buy Now</button> */}
                         </div>
