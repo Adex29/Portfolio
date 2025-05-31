@@ -1,74 +1,93 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import { showModal, closeModal, FormSubmit} from '../components/EventHandler';
-import '../css/customStyle.css';
-
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+// showModal and closeModal are not used in this component, so they can be removed
+// import { showModal, closeModal } from "../components/EventHandler";
+import "../css/customStyle.css";
 
 function ContactMe() {
+  const contactMethods = [
+    {
+      icon: "📧",
+      title: "Email",
+      value: "jayarbaniqued29@gmail.com",
+      link: "mailto:jayarbaniqued29@gmail.com",
+      description: "Drop me a line anytime",
+    },
+    {
+      icon: "💼",
+      title: "LinkedIn",
+      value: "Jay-ar Baniqued",
+      link: "https://www.linkedin.com/in/jay-ar-b-6a7343128/",
+      description: "Let's connect professionally",
+    },
+  ];
 
-
-    return (
-        <div>
-            <Header />
-
-            <div className=''>
-                <center>
-                    <h1 className="text-6xl font-semibold py-10 ">Contact Me</h1>
-                    <hr className="w-4/5 my-7 border-t-2 border-b-2 border-black" />
-                </center>
-                <div className='lg:flex'>
-                    <div className='basis-1/2 relative '>
-                        {/* <img className="absolute ml-36 mt-2 z-10 opacity-25" src="/conatctMeBackground.png" width="350" alt='contact-background-image'></img> */}
-                        <center className='d-flex flex-col justify-content-center relative z-20'>
-                            <h3 className="text-2xl py-5 mt-20"><strong>Need Help?</strong></h3>
-                            <p className='p-10 text-xl font-semibold'>Get in touch with me via filling the form or sending me a messege using my contact Details.</p>
-                            <button className="btn border-gray-300 md:mt-20" onClick={() => showModal()}>View Contact Details</button>
-                        </center>
+  return (
+    // 1. Add flex flex-col to make this a column-based flex container
+    //    Using min-h-screen is often preferred over h-screen for page layouts
+    //    as it allows content to grow beyond the screen height if necessary.
+    //    If you strictly want it to be exactly screen height and potentially
+    //    have internal scrolling, h-screen is fine.
+    <div className="bg-gray-100 min-h-screen flex flex-col">
+      <Header />
+      {/* 2. Add flex-grow to this main content wrapper so it expands */}
+      {/*    It's good practice to use a <main> tag for the main content */}
+      <main className="md:p-10 p-3 flex-grow">
+        <center>
+          <h1 className="text-6xl py-10 font-semibold">Contact Me</h1>
+          <hr className="w-4/5 my-7 border-t-2 border-b-2 border-black" />
+        </center>
+        <div className="max-w-6xl mx-auto px-4 py-16">
+          <div className="lg:flex lg:gap-16 items-center">
+            <div className="lg:w-full mb-12 lg:mb-0">
+              <div className="space-y-6">
+                {contactMethods.map((method, index) => (
+                  <div
+                    key={index}
+                    className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+                  >
+                    <div className="flex items-start space-x-4">
+                      <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
+                        {method.icon}
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                          {method.title}
+                        </h3>
+                        <p className="text-gray-600 mb-3">
+                          {method.description}
+                        </p>
+                        <a
+                          href={method.link}
+                          className="inline-flex items-center text-lg font-semibold text-blue-600 hover:text-purple-600 transition-colors duration-300 group"
+                        >
+                          {method.value}
+                          <svg
+                            className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
+                          </svg>
+                        </a>
+                      </div>
                     </div>
-                    <div className='basis-1/2 z-40 relative contact-container lg:shrink'>--Under Development--</div>
-                    {/* <div className='basis-1/2 z-40 relative contact-container lg:shrink'>
-                        <center>
-                            <h3 className="text-2xl py-5"><strong>MESSAGE ME</strong></h3>
-                            <form className='form-control w-3/4'>
-                                <label className="input input-bordered flex items-center gap-2 m-2">
-                                    Name:
-                                    <input type="text" className="grow" placeholder="" required />
-                                </label>
-                                <label className="input input-bordered flex items-center gap-2 m-2">
-                                    Email:
-                                    <input type="email" className="grow" placeholder="" required />
-                                </label>
-                                <label className="input input-bordered flex items-center gap-2 m-2">
-                                    Phone:
-                                    <input type="tel" className="grow" placeholder="" required />
-                                </label>
-                                <textarea className="textarea textarea-bordered m-2" placeholder="Message" required></textarea>
-                                <button onClick={() => FormSubmit()} type="button" className="btn btn-success m-2">Send</button>
-                            </form>
-                        </center>
-                    </div> */}
-                </div>
+                  </div>
+                ))}
+              </div>
             </div>
-
-            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-                <div className="modal-box">
-                    <center>
-                        <h3 className="font-bold text-2xl pb-5 "><strong>CONTACT DETAILS</strong></h3>
-                        <hr className="w-full border-black " />
-                        <h6 className="text-2xl pt-5"><a className='link link-hover' href="mailto:jayarbaniqued29@gmail.com">jayarbaniqued29@gmail.com</a></h6>
-                        {/* <h6 className="text-2xl">0951-072-8003</h6> */}
-                        <h6 className="text-2xl pt-5"><strong>LinkedIn</strong></h6>
-                        <h6 className="text-2xl"><a className='link link-hover' href="https://www.linkedin.com/in/jay-ar-b-6a7343128/">Jay-ar Baniqued</a></h6>
-                        
-                    </center>
-                    <div className='modal-action'>
-                        <button onClick={() => closeModal()} className="btn">Close</button>
-                    </div>
-                </div>
-            </dialog>
-            <Footer />
+          </div>
         </div>
-    );
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default ContactMe;

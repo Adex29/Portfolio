@@ -5,7 +5,7 @@ function Header() {
         { href: "/", label: "Home" },
         { href: "/projects", label: "Projects" },
         { href: "/aboutme", label: "About" },
-        { href: "/contactme", label: "Contact" },
+        // { href: "/contactme", label: "Contact" },
     ];
 
     return (
