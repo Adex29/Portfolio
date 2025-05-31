@@ -115,6 +115,18 @@ function AboutMe() {
               </h3>
             </center>
             <div className="p-4 sm:p-6 md:p-8 lg:p-10 text-sm sm:text-base">
+                <p className="mb-4">
+                <i>Internship</i>
+                <br />
+                <i className="text-xs sm:text-sm">
+                 Philippine Rice Research Institute - Central Experiment Station (PhilRice - CES),
+                  Training Management and Services Division.
+                </i>
+                <br />
+                <strong className="text-xs sm:text-sm">
+                  Feb - May 2025
+                </strong>
+              </p>
               <p className="mb-4">
                 <i>Project League of Developers Initiative (LODI)</i>
                 <br />
