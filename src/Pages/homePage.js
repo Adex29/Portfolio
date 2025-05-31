@@ -42,11 +42,11 @@ class HomePage extends Component {
                         </center>
                     </div>
                 </div>
-                <div className="flex start justify-start w-1/2 py-0 md:pl-14">
+                {/* <div className="flex start justify-start w-1/2 py-0 md:pl-14">
                     <a href="/contactme">
                         <button className="btn btn-wide btn-success text-lg">Contact Me?</button>
                     </a>
-                </div>
+                </div> */}
                 <div className="flex start justify-start pt-14 pb-5 md:pl-14">
                     <h1 className="text-6xl">Know more about me</h1>
                 </div>
