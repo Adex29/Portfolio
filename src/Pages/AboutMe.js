@@ -124,7 +124,7 @@ function AboutMe() {
                 </i>
                 <br />
                 <strong className="text-xs sm:text-sm">
-                  Feb - May 2025
+                  February - May 2025
                 </strong>
               </p>
               <p className="mb-4">
