@@ -15,7 +15,7 @@ class Projects extends Component{
         },
         {
             name: "FluiGuard",
-            description: "A mobile application developed using Flutter with a Firebase backend, designed to monitor dissolved oxygen levels in water by analyzing fish behavior through live video feeds from a Raspberry Pi with a camera. It uses machine learning to process the video feeds and data from sensors, which is then displayed in the app. The app features real-time monitoring, historical data analysis, and alerts for abnormal conditions. It was a capstone project developed by me and my team mates, I was responsible for the frontend(slightly, only the data visualization page), backend development, training and integration of the objectect detection model, object tracking, object counting and analysis. Link to our Capstone Project paper:",
+            description: "A mobile application developed using Flutter with a Firebase backend, designed to monitor dissolved oxygen levels in water by analyzing fish behavior through live video feeds from a Raspberry Pi with a camera. It uses machine learning to process the video feeds and data from sensors, which is then displayed in the app. The app features real-time monitoring, historical data analysis, and alerts for abnormal conditions. It was a capstone project developed by me and my team mates, I was responsible for the frontend(slightly, only the data visualization page), backend development, training and integration of the objectect detection model, object tracking, object counting and analysis.",
             img: "/projectIMG/FluiGuard.png"
         },
                 {
