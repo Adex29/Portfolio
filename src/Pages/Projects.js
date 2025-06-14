@@ -78,17 +78,17 @@ class Projects extends Component {
     return (
       <div>
         <FadeContent
-          blur={true}
-          distance={150}
-          direction="horizontal"
+          blur={window.innerWidth > 768 ? true : false}
+          distance={window.innerWidth < 768 ? 0 : 30}
+          direction="vertical"
           reverse={false}
-          duration={200}
-          ease="bounce.out"
-          initialOpacity={0.2}
-          animateOpacity
-          scale={1.1}
-          threshold={0.2}
-          delay={0.3}
+          duration={window.innerWidth < 768 ? 0 : 400}
+          ease="power1.out"
+          initialOpacity={window.innerWidth < 768 ? 1 : 0.8}
+          animateOpacity={window.innerWidth >= 768}
+          scale={1}
+          threshold={0.1}
+          delay={0}
         >
           <div>
             <Header />
