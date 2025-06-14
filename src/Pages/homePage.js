@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
-import TextPressure from "../reacbits/TextPressure/TextPressure";
 import ScrollReveal from "../reacbits/ScrollReveal/ScrollReveal";
 import RotatingText from "../reacbits/RotatingText/RotatingText";
 import FadeContent from "../reacbits/FadeContent/FadeContent";
@@ -38,18 +37,7 @@ class HomePage extends Component {
         >
           <div className="p-10">
             <h1 className="text-6xl font-bold pl-14">
-              <TextPressure
-                text="Hello There and Welcome!"
-                flex={true}
-                alpha={false}
-                stroke={false}
-                width={true}
-                weight={true}
-                italic={false}
-                textColor="#000000"
-                strokeColor="#ff0000"
-                className="font-bold"
-              />
+              Hello There and Welcome!
             </h1>
 
             <div className="flex flex-col-reverse md:flex md:flex-row md:py-0 md:pl-14">
