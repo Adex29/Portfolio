@@ -3,7 +3,7 @@ import AnimatedContent from "../reacbits/AnimatedContent/AnimatedContent";
 
 function ProjectBuilder(props) {
   return (
-    <div className="flex flex-wrap justify-center m-auto w-full gap-10">
+    <div className="flex flex-wrap justify-center m-auto w-full px-3 gap-10">
       {props.projects.map((project, index) => (
         <AnimatedContent
           key={index}

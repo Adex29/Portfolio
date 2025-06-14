@@ -2,6 +2,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../css/customStyle.css";
 import FadeContent from "../reacbits/FadeContent/FadeContent";
+// Add the import for AnimatedContent
+import AnimatedContent from "../reacbits/AnimatedContent/AnimatedContent";
 
 function AboutMe() {
   const contactMethods = [
@@ -46,6 +48,7 @@ function AboutMe() {
 
   return (
     <div>
+      {/* The existing FadeContent wrapper is kept as requested */}
       <FadeContent
         blur={true}
         distance={150}
@@ -63,160 +66,172 @@ function AboutMe() {
           <Header />
 
           <div className="px-4 py-6 sm:px-6 md:px-8 lg:p-10">
-            <center>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl py-6 md:py-8 lg:py-10 font-semibold">
-                About Me
-              </h1>
-              <hr className="w-4/5 my-7 border-t-2 border-b-2 border-black" />
-            </center>
+            {/* AnimatedContent added for the title section */}
+            <AnimatedContent direction="vertical" distance={50} duration={0.8} delay={0.1}>
+              <center>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl py-6 md:py-8 lg:py-10 font-semibold">
+                  About Me
+                </h1>
+                <hr className="w-4/5 my-7 border-t-2 border-b-2 border-black" />
+              </center>
+            </AnimatedContent>
 
-            <div className="flex flex-col-reverse bg-gray-200 m-0 lg:flex lg:flex-row img-container">
-              <div className="basis-3/4 content-center">
-                <center>
-                  <p className="p-4 sm:p-6 md:p-8 lg:p-10 text-lg sm:text-xl md:text-2xl lg:text-3xl text-justify">
-                    Hi, I'm Jay-ar Baniqued, currently a 4th-year college
-                    student at Central Luzon State University. My academic
-                    journey has allowed me to develop a strong foundation in
-                    information technology, and I’m passionate about leveraging
-                    technology to create solutions that make a difference.
-                  </p>
-                  <p className="px-4 pb-4 sm:px-6 sm:pb-6 md:px-8 md:pb-8 lg:px-10 lg:pb-10 text-lg sm:text-xl md:text-2xl lg:text-3xl text-justify">
-                    My goal is to continue learning, growing, and contributing
-                    to projects that blend technology and community service.
-                    Whether it’s through my academic pursuits or personal
-                    projects, I’m always eager to take on new challenges and
-                    explore new opportunities.
-                  </p>
-                </center>
-              </div>
-              <div className="basis-1/4 flex items-center justify-center p-4 lg:p-0">
-                <img
-                  className="p-2 img-border-radius m-auto w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-[300px] xl:h-[300px] object-cover"
-                  src="/aboutMe.jpg"
-                  alt="AboutMeImage"
-                />
-              </div>
-            </div>
-
-            <div className="md:flex mt-4 lg:gap-x-1 gap-x-4">
-              <div className="md:basis-1/2 certificate-container md:mr-0 lg:md:mr-2 mb-6 md:mb-0">
-                <center>
-                  <h3 className="text-xl sm:text-2xl pt-4 sm:pt-5 font-semibold">
-                    AWARDS AND CERTIFICATION
-                  </h3>
-                </center>
-                <div className="p-4 sm:p-6 md:p-8 lg:p-10 text-sm sm:text-base">
-                  <p className="mb-4">
-                    <i>Civil Service Eligible (Professional)</i>
-                    <br />
-                    <strong className="text-xs sm:text-sm">August 2023</strong>
-                  </p>
-                  <p className="mb-4">
-                    <i>DOST JLSS</i>
-                    <br />
-                    <strong className="text-xs sm:text-sm">August 2023</strong>
-                  </p>
-                  <p>
-                    <i>Academic Scholar</i>
-                    <br />
-                    <strong className="text-xs sm:text-sm">2021 - 2024</strong>
-                  </p>
+            {/* AnimatedContent added for the main bio section */}
+            <AnimatedContent direction="horizontal" distance={100} duration={0.8} delay={0.2}>
+              <div className="flex flex-col-reverse bg-gray-200 m-0 lg:flex lg:flex-row img-container">
+                <div className="basis-3/4 content-center">
+                  <center>
+                    <p className="p-4 sm:p-6 md:p-8 lg:p-10 text-lg sm:text-xl md:text-2xl lg:text-3xl text-justify">
+                      Hi, I'm Jay-ar Baniqued, currently a 4th-year college student at
+                      Central Luzon State University. My academic journey has allowed
+                      me to develop a strong foundation in information technology, and
+                      I’m passionate about leveraging technology to create solutions
+                      that make a difference.
+                    </p>
+                    <p className="px-4 pb-4 sm:px-6 sm:pb-6 md:px-8 md:pb-8 lg:px-10 lg:pb-10 text-lg sm:text-xl md:text-2xl lg:text-3xl text-justify">
+                      My goal is to continue learning, growing, and contributing to
+                      projects that blend technology and community service. Whether
+                      it’s through my academic pursuits or personal projects, I’m
+                      always eager to take on new challenges and explore new
+                      opportunities.
+                    </p>
+                  </center>
+                </div>
+                <div className="basis-1/4 flex items-center justify-center p-4 lg:p-0">
+                  <img
+                    className="p-2 img-border-radius m-auto w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-[300px] xl:h-[300px] object-cover"
+                    src="/aboutMe.jpg"
+                    alt="AboutMeImage"
+                  />
                 </div>
               </div>
-              <div className="md:basis-1/2 content-center certificate-container mt-4 md:mt-0 md:ml-0 lg:md:ml-2">
-                <center>
-                  <h3 className="text-xl sm:text-2xl pt-4 sm:pt-5 font-semibold">
-                    WORK EXPERIENCE
-                  </h3>
-                </center>
-                <div className="p-4 sm:p-6 md:p-8 lg:p-10 text-sm sm:text-base">
-                  <p className="mb-4">
-                    <i>Internship</i>
-                    <br />
-                    <i className="text-xs sm:text-sm">
-                      Philippine Rice Research Institute - Central Experiment
-                      Station (PhilRice - CES), Training Management and Services
-                      Division.
-                    </i>
-                    <br />
-                    <strong className="text-xs sm:text-sm">
-                      February - May 2025
-                    </strong>
-                  </p>
-                  <p className="mb-4">
-                    <i>Project League of Developers Initiative (LODI)</i>
-                    <br />
-                    <i className="text-xs sm:text-sm">
-                      Department of Science and Technology (DOST) Central
-                      Office, Planning and Evaluation Service - Information
-                      Technology Division.
-                    </i>
-                    <br />
-                    <strong className="text-xs sm:text-sm">
-                      June - August 2024
-                    </strong>
-                  </p>
-                  <p>
-                    <i>
-                      Special Program for the Employment of Students (SPES){" "}
-                    </i>
-                    <br />
-                    <i className="text-xs sm:text-sm">
-                      Science City of Munoz Public Employment Service Office
-                      (PESO)
-                    </i>
-                    <br />
-                    <strong className="text-xs sm:text-sm">
-                      June - July 2023
-                    </strong>
-                  </p>
+            </AnimatedContent>
+
+            {/* AnimatedContent added for the experience/certifications section */}
+            <AnimatedContent direction="vertical" distance={80} duration={0.8} delay={0.3}>
+              <div className="md:flex mt-4 lg:gap-x-1 gap-x-4">
+                <div className="md:basis-1/2 certificate-container md:mr-0 lg:md:mr-2 mb-6 md:mb-0">
+                  <center>
+                    <h3 className="text-xl sm:text-2xl pt-4 sm:pt-5 font-semibold">
+                      AWARDS AND CERTIFICATION
+                    </h3>
+                  </center>
+                  <div className="p-4 sm:p-6 md:p-8 lg:p-10 text-sm sm:text-base">
+                    <p className="mb-4">
+                      <i>Civil Service Eligible (Professional)</i>
+                      <br />
+                      <strong className="text-xs sm:text-sm">August 2023</strong>
+                    </p>
+                    <p className="mb-4">
+                      <i>DOST JLSS</i>
+                      <br />
+                      <strong className="text-xs sm:text-sm">August 2023</strong>
+                    </p>
+                    <p>
+                      <i>Academic Scholar</i>
+                      <br />
+                      <strong className="text-xs sm:text-sm">2021 - 2024</strong>
+                    </p>
+                  </div>
+                </div>
+                <div className="md:basis-1/2 content-center certificate-container mt-4 md:mt-0 md:ml-0 lg:md:ml-2">
+                  <center>
+                    <h3 className="text-xl sm:text-2xl pt-4 sm:pt-5 font-semibold">
+                      WORK EXPERIENCE
+                    </h3>
+                  </center>
+                  <div className="p-4 sm:p-6 md:p-8 lg:p-10 text-sm sm:text-base">
+                    <p className="mb-4">
+                      <i>Internship</i>
+                      <br />
+                      <i className="text-xs sm:text-sm">
+                        Philippine Rice Research Institute - Central Experiment Station (PhilRice - CES),
+                        Training Management and Services Division.
+                      </i>
+                      <br />
+                      <strong className="text-xs sm:text-sm">
+                        February - May 2025
+                      </strong>
+                    </p>
+                    <p className="mb-4">
+                      <i>Project League of Developers Initiative (LODI)</i>
+                      <br />
+                      <i className="text-xs sm:text-sm">
+                        Department of Science and Technology (DOST) Central Office,
+                        Planning and Evaluation Service - Information Technology
+                        Division.
+                      </i>
+                      <br />
+                      <strong className="text-xs sm:text-sm">
+                        June - August 2024
+                      </strong>
+                    </p>
+                    <p>
+                      <i>Special Program for the Employment of Students (SPES) </i>
+                      <br />
+                      <i className="text-xs sm:text-sm">
+                        Science City of Munoz Public Employment Service Office (PESO)
+                      </i>
+                      <br />
+                      <strong className="text-xs sm:text-sm">June - July 2023</strong>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </AnimatedContent>
+
             <div className="pt-4">
               <div className="lg:flex lg:gap-16 items-center">
                 <div className="lg:w-full mb-12 lg:mb-0">
                   <div className="space-y-6">
                     {contactMethods.map((method, index) => (
-                      <div
+                      // AnimatedContent added to each contact card for a staggered effect
+                      <AnimatedContent
                         key={index}
-                        className="w-full group bg-white rounded-lg p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+                        distance={80}
+                        direction="vertical"
+                        duration={0.8}
+                        delay={0.4 + index * 0.15} // Staggered delay
                       >
-                        <div className="flex items-start space-x-4">
-                          <div
-                            className={`text-gray-700 group-hover:scale-110 group-hover:${method.colorClassName} transition-all duration-300`}
-                          >
-                            {method.icon}
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                              {method.title}
-                            </h3>
-                            <p className="text-gray-600 mb-3">
-                              {method.description}
-                            </p>
-                            <a
-                              href={method.link}
-                              className={`inline-flex items-center text-lg font-semibold ${method.colorClassName} ${method.hoverColorClassName} transition-colors duration-300 group`}
+                        <div
+                          className="w-full group bg-white rounded-lg p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+                        >
+                          <div className="flex items-start space-x-4">
+                            <div
+                              className={`text-gray-700 group-hover:scale-110 group-hover:${method.colorClassName} transition-all duration-300`}
                             >
-                              {method.value}
-                              <svg
-                                className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
+                              {method.icon}
+                            </div>
+                            <div className="flex-1">
+                              <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                                {method.title}
+                              </h3>
+                              <p className="text-gray-600 mb-3">
+                                {method.description}
+                              </p>
+                              <a
+                                href={method.link}
+                                className={`inline-flex items-center text-lg font-semibold ${method.colorClassName} ${method.hoverColorClassName} transition-colors duration-300 group`}
                               >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                                />
-                              </svg>
-                            </a>
+                                {method.value}
+                                <svg
+                                  className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                  />
+                                </svg>
+                              </a>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </AnimatedContent>
                     ))}
                   </div>
                 </div>
