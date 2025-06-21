@@ -13,6 +13,7 @@ class HomePage extends Component {
     super(props);
     this.state = {
       showMore: false,
+      currentColorIndex: 0,
     };
   }
 
@@ -22,21 +23,34 @@ class HomePage extends Component {
     }));
   };
 
+handleNameRotation = (nextIndex) => {
+    const colors = ['text-blue-500', 'text-red-500', 'text-green-500', 'text-purple-500', 'text-pink-500'];
+    
+    setTimeout(() => {
+        this.setState({
+            currentColorIndex: nextIndex % colors.length
+        });
+    }, 800); 
+};
+
+
   render() {
+    const colors = ['text-blue-500', 'text-red-500', 'text-green-500', 'text-purple-500', 'text-pink-500'];
+    
     return (
       <div>
         <FadeContent
-          blur={true}
-          distance={150}
-          direction="horizontal"
+          blur={false}
+          distance={30}
+          direction="vertical"
           reverse={false}
-          duration={200}
-          ease="bounce.out"
-          initialOpacity={0.2}
+          duration={400}
+          ease="power1.out"
+          initialOpacity={0.8}
           animateOpacity
-          scale={1.1}
-          threshold={0.2}
-          delay={0.3}
+          scale={1}
+          threshold={0.1}
+          delay={0}
         >
           <div className="p-10">
             <AnimatedContent direction="vertical" distance={50} delay={0.4} duration={0.8}>
@@ -55,10 +69,10 @@ class HomePage extends Component {
                   <hr className="mx-auto w-4/5 my-7" />
                   <h1 className="text-6xl font-bold py-10">
                     I'm
-                    <span className="text-primary">
+                    <span className={colors[this.state.currentColorIndex]}>
                       {" "}
                       <RotatingText
-                        texts={["Jay-ar Baniqued", "Jay-ar Baniqued"]}
+                        texts={["Jay-ar Baniqued", "Jay-ar Baniqued", "Jay-ar Baniqued", "Jay-ar Baniqued", "Jay-ar Baniqued"]}
                         staggerFrom={"last"}
                         initial={{ y: "100%" }}
                         animate={{ y: 0 }}
@@ -70,7 +84,8 @@ class HomePage extends Component {
                           damping: 30,
                           stiffness: 400,
                         }}
-                        rotationInterval={2000}
+                        rotationInterval={5000}
+                        onNext={this.handleNameRotation}
                       />
                     </span>{" "}
                     and I'm a Full Stack Developer
