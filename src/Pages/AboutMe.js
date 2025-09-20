@@ -89,7 +89,7 @@ function AboutMe() {
               delay={0.2}
             >
               <div className="flex flex-col-reverse bg-gray-200 m-0 lg:flex lg:flex-row img-container">
-                <div className="lg:basis-3/4 md:basis-1/2 content-center">
+                <div className="lg:basis-7/12 xl:basis-3/4 content-center">
                   <center>
                     <p className="p-4 sm:p-6 md:p-8 lg:p-10 text-lg sm:text-xl md:text-2xl lg:text-3xl text-justify">
                       Hi, I'm Jay-ar Baniqued, a recent graduate in Information
@@ -109,9 +109,9 @@ function AboutMe() {
                     </p>
                   </center>
                 </div>
-                <div className="lg:basis-1/4 md:basis-1/2 flex items-center justify-center p-4 lg:p-0">
+                <div className="lg:basis-5/12 xl:basis-1/4 flex items-center justify-center p-4 lg:p-0">
                   <img
-                    className="p-2 img-border-radius m-auto lg:max-h-[500px] object-cover"
+                    className="p-2 img-border-radius m-auto sm:max-h-[300px] md:max-h-[400px] lg:max-h-[600px] xl:max-h-[500px] object-cover"
                     src="/aboutMe.jpg"
                     alt="AboutMeImage"
                   />
