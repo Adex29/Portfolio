@@ -65,7 +65,7 @@ function AboutMe() {
         <div>
           <Header />
 
-          <div className="px-4 py-6 sm:px-6 md:px-8 lg:p-10">
+          <div className="px-4 py-6 sm:px-6 md:px-8 lg:p-10 max-w-screen-2xl m-auto">
             {/* AnimatedContent added for the title section */}
             <AnimatedContent
               direction="vertical"

@@ -92,7 +92,7 @@ class Projects extends Component {
         >
           <div>
             <Header />
-            <div className="md:p-10 p-3">
+            <div className="md:p-10 p-3 max-w-screen-2xl m-auto">
               <center>
                 <h1 className="text-6xl py-10 font-semibold">Projects</h1>
                 <hr className="w-4/5 my-7 border-t-2 border-b-2 border-black" />

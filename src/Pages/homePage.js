@@ -38,7 +38,7 @@ handleNameRotation = (nextIndex) => {
     const colors = ['text-blue-500', 'text-red-500', 'text-green-500', 'text-purple-500', 'text-pink-500'];
     
     return (
-      <div>
+      <div className="max-w-screen-2xl m-auto">
         <FadeContent
           blur={false}
           distance={30}
