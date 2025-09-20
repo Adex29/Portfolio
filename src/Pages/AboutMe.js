@@ -176,7 +176,7 @@ function AboutMe() {
                       <br />
                       <i className="text-xs sm:text-sm">
                         Philippine Rice Research Institute - Central Experiment
-                        Station (PhilRice - CES), Training Management and
+                        Station (PhilRice - CES), Technology Management and
                         Services Division.
                       </i>
                       <br />
@@ -189,7 +189,7 @@ function AboutMe() {
                       <br />
                       <i className="text-xs sm:text-sm">
                         Philippine Rice Research Institute - Central Experiment
-                        Station (PhilRice - CES), Training Management and
+                        Station (PhilRice - CES), Technology Management and
                         Services Division.
                       </i>
                       <br />
